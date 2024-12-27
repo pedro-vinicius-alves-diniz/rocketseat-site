@@ -1,0 +1,37 @@
+{
+  "todo": [
+    {
+      "assignedTo": {
+        "name": "Pedro Vinicius Alves Diniz"
+      },
+      "creation_time": "2024-12-27T23:01:39.735Z",
+      "id": "2",
+      "prio": 0,
+      "references": [],
+      "title": "Inserir as cores que serão utilizadas nas configurações do Tailwind CSS"
+    },
+    {
+      "assignedTo": {
+        "name": "Pedro Vinicius Alves Diniz"
+      },
+      "creation_time": "2024-12-27T23:00:44.071Z",
+      "id": "1",
+      "prio": 0,
+      "references": [],
+      "title": "Instalar o Tailwind CSS no projeto"
+    },
+    {
+      "assignedTo": {
+        "name": "Pedro Vinicius Alves Diniz"
+      },
+      "creation_time": "2024-12-27T23:02:46.919Z",
+      "id": "3",
+      "prio": 0,
+      "references": [],
+      "title": "Construir o layout da pagina e dividi-lo em partes"
+    }
+  ],
+  "in-progress": [],
+  "testing": [],
+  "done": []
+}
