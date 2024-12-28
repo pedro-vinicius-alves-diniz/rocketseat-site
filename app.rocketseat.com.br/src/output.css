@@ -554,21 +554,6 @@ video {
   display: none;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-9xl {
-  font-size: 8rem;
-  line-height: 1;
-}
-
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
@@ -581,4 +566,9 @@ video {
 .text-fuchsia-700 {
   --tw-text-opacity: 1;
   color: rgb(162 28 175 / var(--tw-text-opacity, 1));
+}
+
+.text-primary-1 {
+  --tw-text-opacity: 1;
+  color: rgb(130 87 229 / var(--tw-text-opacity, 1));
 }
