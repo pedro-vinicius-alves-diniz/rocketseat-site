@@ -32,11 +32,11 @@
                     </div>
                 </div>
 
-                <div class="flex items-center gap-2 p-3 bg-dark-1 rounded-md">
+                <div id="content-search" class="flex items-center gap-2 p-3 bg-dark-1 rounded-md">
                     <i class="bi bi-search text-2xl text-zinc-500"></i>
                     <div>
                         <form>
-                            <input type="text" placeholder="Busque por assuntos e aulas"
+                            <input id="input" type="text" placeholder="Busque por assuntos e aulas"
                                 class="bg-transparent pl-2 w-96 text-white placeholder:text-zinc-500 placeholder:font-semibold focus:outline-none">
                         </form>
                     </div>
@@ -44,6 +44,10 @@
                 </div>
 
                 <div class="flex items-center gap-3 mr-2">
+                    <div class="flex items-start gap-5 border border-zinc-700 p-2 px-4 rounded-md transition-colors cursor-pointer hover:border-zinc-600">
+                        <img src="assets/icons/icon-fire-light.svg" alt="Icone Fire Light">
+                        <span class="text-white font-bold text-lg">0</span>
+                    </div>
                     <a href="#"
                         class="text-zinc-200 font-bold bg-zinc-800 p-3 rounded-md transition-colors hover:bg-zinc-700">Entrar</a>
                     <a href="#"
