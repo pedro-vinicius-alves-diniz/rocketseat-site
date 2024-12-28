@@ -1,5 +1,6 @@
 {
-  "todo": [
+  "todo": [],
+  "in-progress": [
     {
       "assignedTo": {
         "name": "Pedro Vinicius Alves Diniz"
@@ -11,7 +12,8 @@
       "title": "Construir o layout da pagina e dividi-lo em partes"
     }
   ],
-  "in-progress": [
+  "testing": [],
+  "done": [
     {
       "assignedTo": {
         "name": "Pedro Vinicius Alves Diniz"
@@ -21,10 +23,7 @@
       "prio": 0,
       "references": [],
       "title": "Inserir as cores que serão utilizadas nas configurações do Tailwind CSS"
-    }
-  ],
-  "testing": [],
-  "done": [
+    },
     {
       "assignedTo": {
         "name": "Pedro Vinicius Alves Diniz"
