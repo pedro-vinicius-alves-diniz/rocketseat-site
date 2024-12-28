@@ -8,6 +8,9 @@ module.exports = {
         'dark-2': '#1A1A1E',
         'primary-1': 'rgb(130, 52, 233)',
         'primary-2': '#9956F6'
+      },
+      backgroundImage: {
+        'banner': "url('./assets/background/retrospective-desktop.png')"
       }
     },
   },

@@ -1,26 +1,6 @@
 {
-  "todo": [
-    {
-      "assignedTo": {
-        "name": "Pedro Vinicius Alves Diniz"
-      },
-      "creation_time": "2024-12-28T17:40:47.040Z",
-      "id": "5",
-      "references": [],
-      "title": "Construção da parte visual do banner presente no Header"
-    }
-  ],
-  "in-progress": [
-    {
-      "assignedTo": {
-        "name": "Pedro Vinicius Alves Diniz"
-      },
-      "creation_time": "2024-12-28T17:39:07.693Z",
-      "id": "4",
-      "references": [],
-      "title": "Construção da parte visual do topbar"
-    }
-  ],
+  "todo": [],
+  "in-progress": [],
   "testing": [],
   "done": [
     {
@@ -32,6 +12,15 @@
       "prio": 0,
       "references": [],
       "title": "Construir o layout da pagina e dividi-lo em partes"
+    },
+    {
+      "assignedTo": {
+        "name": "Pedro Vinicius Alves Diniz"
+      },
+      "creation_time": "2024-12-28T17:39:07.693Z",
+      "id": "4",
+      "references": [],
+      "title": "Construção da parte visual do topbar"
     },
     {
       "assignedTo": {
@@ -52,6 +41,15 @@
       "prio": 0,
       "references": [],
       "title": "Instalar o Tailwind CSS no projeto"
+    },
+    {
+      "assignedTo": {
+        "name": "Pedro Vinicius Alves Diniz"
+      },
+      "creation_time": "2024-12-28T17:40:47.040Z",
+      "id": "5",
+      "references": [],
+      "title": "Construção da parte visual do banner presente no Header"
     }
   ]
 }
