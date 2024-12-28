@@ -1,23 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="output.css">
     <title>Rocketseat</title>
 </head>
+
 <body>
     <div>
 
-        <header>
-            <nav>
+        <header class="w-full bg-dark-2">
+            <nav class="mx-5 flex items-center justify-between py-4">
+                <div class="flex items-center gap-4">
+                    <div class="p-3 bg-zinc-800 rounded-md cursor-pointer transition-colors hover:bg-zinc-700">
+                        <img src="assets/icons/icon-menu-left.svg" alt="Icone de Menu Left" class="w-4">
+                    </div>
 
+                    <div class="flex items-center justify-center gap-1">
+                        <img class="w-8" src="assets/icons/rocketseat-symbol.svg" alt="Logo Rocketseat">
+                        <p class="text-white font-serif font-semibold text-3xl">ROCKETSEAT</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-2 p-3 bg-dark-1 rounded-md">
+                    <i class="bi bi-search text-2xl text-zinc-500"></i>
+                    <div>
+                        <form>
+                            <input type="text" placeholder="Busque por assuntos e aulas"
+                                class="bg-transparent pl-2 w-96 text-white placeholder:text-zinc-500 placeholder:font-semibold focus:outline-none">
+                        </form>
+                    </div>
+                    <p class="text-sm text-zinc-500 border border-zinc-600 rounded-md py-1 px-3">/</p>
+                </div>
+
+                <div class="flex items-center gap-3 mr-2">
+                    <a href="#"
+                        class="text-zinc-200 font-bold bg-zinc-800 p-3 rounded-md transition-colors hover:bg-zinc-700">Entrar</a>
+                    <a href="#"
+                        class="text-white font-bold bg-primary-1 rounded-md p-3 transition-colors hover:bg-primary-2">Comece
+                        grátis</a>
+                </div>
             </nav>
-             
-            <div>
-                
-            </div>  
+            
+            <div class="flex items-center justify-between">
+                <p>
+                    <span>// RETROSPECTIVA 2024 ///</span> | <span>Relembre como foi sua jornada de estudos neste ano</span>
+                </p>
+
+                <a href="#">
+                    Acessar retrospectiva <i class="bi bi-arrow-up-right"></i>
+                </a>
+            </div>
         </header>
 
         <div>
@@ -31,11 +73,12 @@
                 </div>
 
                 <div>
-                    
+
                 </div>
             </main>
         </div>
 
     </div>
 </body>
+
 </html>
