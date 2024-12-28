@@ -1,5 +1,54 @@
 {
-  "todo": [],
+  "todo": [
+    {
+      "assignedTo": {
+        "name": "Pedro Vinicius Alves Diniz"
+      },
+      "creation_time": "2024-12-28T20:47:04.525Z",
+      "description": {
+        "content": "Opaçidade background;\nBorda white no \"content-search\";\nInserir icone \"close\";",
+        "mime": "text/markdown"
+      },
+      "id": "7",
+      "references": [],
+      "title": "Animação focus input"
+    },
+    {
+      "assignedTo": {
+        "name": "Pedro Vinicius Alves Diniz"
+      },
+      "creation_time": "2024-12-28T20:48:20.382Z",
+      "id": "8",
+      "references": [],
+      "title": "Criação parte visual \"Sidebar\""
+    },
+    {
+      "assignedTo": {
+        "name": "Pedro Vinicius Alves Diniz"
+      },
+      "creation_time": "2024-12-28T20:42:53.375Z",
+      "description": {
+        "content": "Mudança icone menu;\nTirando a palavra \"Rocketseat\";\nMudança componente \"input\";",
+        "mime": "text/markdown"
+      },
+      "details": {
+        "content": "Mudança icone menu;\nTirando a palavra \"Rocketseat\";\nMudança componente \"input\";",
+        "mime": "text/markdown"
+      },
+      "id": "6",
+      "references": [],
+      "title": "Responsividade da parte \"header\" da página (> 1024px)"
+    },
+    {
+      "assignedTo": {
+        "name": "Pedro Vinicius Alves Diniz"
+      },
+      "creation_time": "2024-12-28T20:49:29.887Z",
+      "id": "9",
+      "references": [],
+      "title": "Animação \"icon-menu\""
+    }
+  ],
   "in-progress": [],
   "testing": [],
   "done": [
@@ -12,6 +61,15 @@
       "prio": 0,
       "references": [],
       "title": "Construir o layout da pagina e dividi-lo em partes"
+    },
+    {
+      "assignedTo": {
+        "name": "Pedro Vinicius Alves Diniz"
+      },
+      "creation_time": "2024-12-28T17:40:47.040Z",
+      "id": "5",
+      "references": [],
+      "title": "Construção da parte visual do banner presente no Header"
     },
     {
       "assignedTo": {
@@ -41,15 +99,6 @@
       "prio": 0,
       "references": [],
       "title": "Instalar o Tailwind CSS no projeto"
-    },
-    {
-      "assignedTo": {
-        "name": "Pedro Vinicius Alves Diniz"
-      },
-      "creation_time": "2024-12-28T17:40:47.040Z",
-      "id": "5",
-      "references": [],
-      "title": "Construção da parte visual do banner presente no Header"
     }
   ]
 }
