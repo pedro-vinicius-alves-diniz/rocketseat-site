@@ -17,13 +17,14 @@
 
 <body>
 
-    <div id="content-page">
+    <div id="content-page" class="z-0 w-full h-screenrelative">
 
         <header class="w-full bg-dark-2">
             <nav class="mx-5 flex items-center justify-between py-4">
                 <div class="flex items-center gap-4">
-                    <div id="icon-menu" class="p-3 bg-zinc-800 rounded-md cursor-pointer transition-colors hover:bg-zinc-700">
-                        <img src="assets/icons/icon-menu-left.svg" alt="Icone de Menu Left" class="w-4">
+                    <div id="icon-menu-content"
+                        class="p-3 bg-zinc-800 rounded-md cursor-pointer transition-colors hover:bg-zinc-700">
+                        <img id="icon-menu-item" src="assets/icons/icon-menu-left.svg" alt="Icone de Menu Left" class="w-4">
                     </div>
 
                     <div class="flex items-center justify-center gap-1">
@@ -32,7 +33,7 @@
                     </div>
                 </div>
 
-                <div id="content-search" class="flex items-center gap-2 p-3 bg-dark-1 rounded-md">
+                <div id="content-search" class="z-50 flex items-center gap-2 p-3 bg-dark-1 rounded-md">
                     <i class="bi bi-search text-2xl text-zinc-500"></i>
                     <div>
                         <form>
@@ -44,7 +45,8 @@
                 </div>
 
                 <div class="flex items-center gap-3 mr-2">
-                    <div class="flex items-start gap-5 border border-zinc-700 p-2 px-4 rounded-md transition-colors cursor-pointer hover:border-zinc-600">
+                    <div
+                        class="flex items-start gap-5 border border-zinc-700 p-2 px-4 rounded-md transition-colors cursor-pointer hover:border-zinc-600">
                         <img src="assets/icons/icon-fire-light.svg" alt="Icone Fire Light">
                         <span class="text-white font-bold text-lg">0</span>
                     </div>
@@ -55,12 +57,13 @@
                         grátis</a>
                 </div>
             </nav>
-            
+
             <div class="w-full bg-banner bg-cover py-4">
                 <div class="flex items-center justify-between max-w-screen-2xl m-auto">
                     <p>
-                        <span class="text-white font-bold text-xl">// RETROSPECTIVA 2024 ///</span>  
-                        <span class="ml-2 text-lg text-zinc-300 font-medium border-l border-zinc-600 pl-2"> Relembre como foi sua jornada de estudos neste ano</span>
+                        <span class="text-white font-bold text-xl">// RETROSPECTIVA 2024 ///</span>
+                        <span class="ml-2 text-lg text-zinc-300 font-medium border-l border-zinc-600 pl-2"> Relembre
+                            como foi sua jornada de estudos neste ano</span>
                     </p>
                     <a href="#" class="text-white text-sm font-semibold transition-colors hover:text-zinc-300">
                         Acessar retrospectiva <i class="bi bi-arrow-up-right ml-1"></i>
@@ -69,23 +72,115 @@
             </div>
         </header>
 
-        <div>
-            <aside>
+        <div class="absolute top-[149px] bottom-0 w-full flex bg-dark-1">
+            <aside class="flex flex-col items-start justify-between py-5 px-4 border-r border-zinc-700">
+                <div class="space-y-4">
+                    <a href="#" class="cursor-pointer flex items-center gap-3 p-3 max-w-48 bg-dark-2 rounded-md hover:bg-dark-2">
+                        <img class="w-7" src="assets/icons/icon-home.svg" alt="Icone home">
+                        <span class="item-sidebar text-zinc-400 font-medium text-lg">Home</span>
+                    </a>
 
+                    <a href="#" class="cursor-pointer flex items-center gap-3 p-3 max-w-48 rounded-md hover:bg-dark-2">
+                        <img class="w-7" src="assets/icons/icon-catalogo.svg" alt="Icone Catálogo">
+                        <span class="item-sidebar text-zinc-400 font-medium text-lg">Catálogo</span>
+                    </a>
+
+                    <a href="#" class="cursor-pointer flex items-center gap-3 p-3 max-w-48 rounded-md hover:bg-dark-2">
+                        <img class="w-7" src="assets/icons/icon-pos_graduacao.svg" alt="Icone Pós-Graduação">
+                        <span class="item-sidebar text-zinc-400 font-medium text-lg">Pós-Graduação</span>
+                    </a>
+
+                    <a href="#" class="cursor-pointer flex items-center gap-3 p-3 max-w-48 rounded-md hover:bg-dark-2">
+                        <img class="w-7" src="assets/icons/icon-forum.svg" alt="Icone Fórum">
+                        <span class="item-sidebar text-zinc-400 font-medium text-lg">Fórum</span>
+                    </a>
+                </div>
+
+                <div class="space-y-4">
+                    <a href="#" class="cursor-pointer flex items-center gap-3 p-3 max-w-48 rounded-md hover:bg-dark-2">
+                        <img class="w-7" src="assets/icons/icon-comunidade.svg" alt="Icone Comunidade">
+                        <span class="item-sidebar text-zinc-400 font-medium text-lg">Comunidade</span>
+                    </a>
+
+                    <a href="#" class="cursor-pointer flex items-center gap-3 p-3 max-w-48 rounded-md hover:bg-dark-2">
+                        <img class="w-7" src="assets/icons/icon-ajuda.svg" alt="Icone de Ajuda">
+                        <span class="item-sidebar text-zinc-400 font-medium text-lg">Ajuda</span>
+                    </a>
+                </div>
             </aside>
 
             <main>
                 <div>
+                    <div id="card">
+                        <div>
+                            <h4>Comece sua jornada na Rocketseat gratuitamente</h4>
+                            <p>Avance em seus estudos e aproveite os nossos estudos gratuitos ou assine para ter acesso a todas as nossas formações</p>
+                        </div>
 
+                        <a href="#">Comece gratuitamente</a>
+                    </div>
+
+                    <div id="options">
+                        <div>
+                            <h6>Veja o que vem aí</h6>
+                            <p>Descubra as novidades da Rocketseat</p>
+                        </div>
+
+                        <div>
+                            <div>
+                                <a href="#">TODOS OS LEMBRETES</a>
+                                <a href="#">EVENTOS</a>
+                                <a href="#">CONTEÚDOS</a>
+                                <a href="#">NOVIDADES DA PLATAFORMA</a>
+                                <a href="#">OFERTAS</a>
+                            </div>
+
+                            <div>
+                                <i class="bi bi-calendar3"></i>
+                                <a href="#">Filtrar por data</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div>
+                    <div>
+                        <div>
+                            <img src="assets/icons/rocketseat-symbol.svg" alt="">
+                            <p>Olá visitante</p>
+                        </div>
 
+                        <div>
+                            <a href="#"><img src="assets/icons/icon-objetivo.svg" alt=""></a>
+                            <div>
+                                <p>Meu objetivo</p>
+                                <p>Crie um plano personalizado para te levar ao seu objetivo</p>
+                                <div>
+                                    <a href="#">Definir objetivo </a>
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </div>
+                            </div>
+
+                            <div>
+                                <a href="#">
+                                    <img src="assets/icons/icon-presente.svg" alt="">
+                                    <span>Indique e ganhe</span>
+                                </a>
+
+                                <a href="#">
+                                    <img src="assets/icons/icon-comunidade.svg" alt="">
+                                    <span>Comunidade</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
         </div>
 
     </div>
+
+    <script type="module" src="script.js"></script>
 </body>
 
 </html>

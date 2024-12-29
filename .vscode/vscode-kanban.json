@@ -17,15 +17,6 @@
       "assignedTo": {
         "name": "Pedro Vinicius Alves Diniz"
       },
-      "creation_time": "2024-12-28T20:48:20.382Z",
-      "id": "8",
-      "references": [],
-      "title": "Criação parte visual \"Sidebar\""
-    },
-    {
-      "assignedTo": {
-        "name": "Pedro Vinicius Alves Diniz"
-      },
       "creation_time": "2024-12-28T20:42:53.375Z",
       "description": {
         "content": "Mudança icone menu;\nTirando a palavra \"Rocketseat\";\nMudança componente \"input\";",
@@ -38,7 +29,9 @@
       "id": "6",
       "references": [],
       "title": "Responsividade da parte \"header\" da página (> 1024px)"
-    },
+    }
+  ],
+  "in-progress": [
     {
       "assignedTo": {
         "name": "Pedro Vinicius Alves Diniz"
@@ -49,7 +42,6 @@
       "title": "Animação \"icon-menu\""
     }
   ],
-  "in-progress": [],
   "testing": [],
   "done": [
     {
@@ -79,6 +71,15 @@
       "id": "4",
       "references": [],
       "title": "Construção da parte visual do topbar"
+    },
+    {
+      "assignedTo": {
+        "name": "Pedro Vinicius Alves Diniz"
+      },
+      "creation_time": "2024-12-28T20:48:20.382Z",
+      "id": "8",
+      "references": [],
+      "title": "Criação parte visual \"Sidebar\""
     },
     {
       "assignedTo": {
