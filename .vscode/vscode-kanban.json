@@ -31,17 +31,7 @@
       "title": "Responsividade da parte \"header\" da página (> 1024px)"
     }
   ],
-  "in-progress": [
-    {
-      "assignedTo": {
-        "name": "Pedro Vinicius Alves Diniz"
-      },
-      "creation_time": "2024-12-28T20:49:29.887Z",
-      "id": "9",
-      "references": [],
-      "title": "Animação \"icon-menu\""
-    }
-  ],
+  "in-progress": [],
   "testing": [],
   "done": [
     {
@@ -100,6 +90,15 @@
       "prio": 0,
       "references": [],
       "title": "Instalar o Tailwind CSS no projeto"
+    },
+    {
+      "assignedTo": {
+        "name": "Pedro Vinicius Alves Diniz"
+      },
+      "creation_time": "2024-12-28T20:49:29.887Z",
+      "id": "9",
+      "references": [],
+      "title": "Animação \"icon-menu\""
     }
   ]
 }
