@@ -1,6 +1,10 @@
+const mascaraContainer = document.getElementById("mascara-container");
 const contentPage = document.getElementById("content-page");
 const menuContent = document.getElementById("icon-menu-content");
 const menuItem = document.getElementById("icon-menu-item");
+const searchContainer = document.getElementById("content-search");
+const inputSearch = document.getElementById("input");
+const iconInput = document.getElementById("icon-input");
 const optionsSidebar = document.querySelectorAll(".item-sidebar");
 let menuStatus = "Expandido";
 
@@ -24,4 +28,32 @@ menuContent.addEventListener("click", () => {
       elemento.classList.remove("hidden");
     });
   }
+});
+
+inputSearch.addEventListener("focus", () => {
+  console.log("Input em focus");
+
+  searchContainer.classList.remove("border-transparent");
+  searchContainer.classList.add("border-2-white");
+  
+  iconInput.innerHTML = "x";
+  iconInput.classList.add("rounded-full");
+
+  mascaraContainer.classList.remove("hidden");
+});
+
+iconInput.addEventListener("click", () => {
+  searchContainer.classList.add("border-transparent");
+  searchContainer.classList.remove("border-2-white");
+  iconInput.classList.remove("rounded-full");
+  mascaraContainer.classList.add("hidden");
+  iconInput.innerHTML = "/";
+});
+
+mascaraContainer.addEventListener("click", () => {
+  searchContainer.classList.add("border-transparent");
+  searchContainer.classList.remove("border-2-white");
+  iconInput.classList.remove("rounded-full");
+  mascaraContainer.classList.add("hidden");
+  iconInput.innerHTML = "/";
 });

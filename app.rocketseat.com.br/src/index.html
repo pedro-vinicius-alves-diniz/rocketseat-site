@@ -1,186 +1,307 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="output.css">
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="output.css" />
     <title>Rocketseat</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- MASCARA DO INPUT FOCUS -->
+    <div
+      id="mascara-container"
+      class="hidden fixed top-0 right-0 bottom-0 left-0 z-40 backdrop-blur-sm bg-zinc-900/50"
+    ></div>
 
+    <!-- CONTAINER DA INTEIRA PAGINA -->
     <div id="content-page" class="w-full h-screenrelative">
-
-        <header class="w-full bg-dark-2">
-            <nav class="mx-5 flex items-center justify-between py-4">
-                <div class="flex items-center gap-4">
-                    <div id="icon-menu-content"
-                        class="p-3 bg-zinc-800 rounded-md cursor-pointer transition-colors hover:bg-zinc-700">
-                        <img id="icon-menu-item" src="assets/icons/icon-menu-left.svg" alt="Icone de Menu Left" class="w-4">
-                    </div>
-
-                    <div class="flex items-center justify-center gap-1">
-                        <img class="w-8" src="assets/icons/rocketseat-symbol.svg" alt="Logo Rocketseat">
-                        <p class="text-white font-serif font-semibold text-2xl">ROCKETSEAT</p>
-                    </div>
-                </div>
-
-                <div id="content-search" class="flex items-center gap-2 p-3 bg-dark-1 rounded-md">
-                    <i class="bi bi-search text-2xl text-zinc-500"></i>
-                    <div>
-                        <form>
-                            <input id="input" type="text" placeholder="Busque por assuntos e aulas"
-                                class="bg-transparent pl-2 w-96 text-white placeholder:text-zinc-500 placeholder:font-semibold focus:outline-none">
-                        </form>
-                    </div>
-                    <p class="text-sm text-zinc-500 border border-zinc-600 rounded-md py-1 px-3">/</p>
-                </div>
-
-                <div class="flex items-center gap-3 mr-2">
-                    <div
-                        class="flex items-start gap-5 border border-zinc-700 p-2 px-4 rounded-md transition-colors cursor-pointer hover:border-zinc-600">
-                        <img src="assets/icons/icon-fire-light.svg" alt="Icone Fire Light">
-                        <span class="text-white font-bold text-lg">0</span>
-                    </div>
-                    <a href="#"
-                        class="text-zinc-200 font-bold bg-zinc-800 p-3 rounded-md transition-colors hover:bg-zinc-700">Entrar</a>
-                    <a href="#"
-                        class="text-white font-bold bg-primary-1 rounded-md p-3 transition-colors hover:bg-primary-2">Comece
-                        grátis</a>
-                </div>
-            </nav>
-
-            <div class="w-full bg-banner bg-cover py-4">
-                <div class="flex items-center justify-between max-w-screen-2xl m-auto">
-                    <p>
-                        <span class="text-white font-bold text-xl">// RETROSPECTIVA 2024 ///</span>
-                        <span class="ml-2 text-lg text-zinc-300 font-medium border-l border-zinc-600 pl-2"> Relembre
-                            como foi sua jornada de estudos neste ano</span>
-                    </p>
-                    <a href="#" class="text-white text-sm font-semibold transition-colors hover:text-zinc-300">
-                        Acessar retrospectiva <i class="bi bi-arrow-up-right ml-1"></i>
-                    </a>
-                </div>
+      <!-- HEADER DA PAGINA -->
+      <header class="w-full bg-dark-2">
+        <!-- TOPBAR DA PAGINA -->
+        <nav class="mx-5 flex items-center justify-between py-4">
+          <!-- LOGO -->
+          <div class="flex items-center gap-4">
+            <div
+              id="icon-menu-content"
+              class="p-3 bg-zinc-800 rounded-md cursor-pointer transition-colors hover:bg-zinc-700"
+            >
+              <img
+                id="icon-menu-item"
+                src="assets/icons/icon-menu-left.svg"
+                alt="Icone de Menu Left"
+                class="w-4"
+              />
             </div>
-        </header>
 
-        <div class="absolute top-[149px] bottom-0 w-full flex bg-dark-1">
-            <aside class="flex flex-col items-start justify-between py-5 px-4 border-r border-zinc-700">
-                <div class="space-y-4">
-                    <a href="#" class="cursor-pointer flex items-center gap-3 p-3 max-w-48 bg-dark-2 rounded-md hover:bg-dark-2">
-                        <img class="w-7" src="assets/icons/icon-home.svg" alt="Icone home">
-                        <span class="item-sidebar text-zinc-400 font-medium text-lg">Home</span>
-                    </a>
+            <div class="flex items-center justify-center gap-1">
+              <img
+                class="w-8"
+                src="assets/icons/rocketseat-symbol.svg"
+                alt="Logo Rocketseat"
+              />
+              <p class="text-white font-serif font-semibold text-2xl">
+                ROCKETSEAT
+              </p>
+            </div>
+          </div>
 
-                    <a href="#" class="cursor-pointer flex items-center gap-3 p-3 max-w-48 rounded-md hover:bg-dark-2">
-                        <img class="w-7" src="assets/icons/icon-catalogo.svg" alt="Icone Catálogo">
-                        <span class="item-sidebar text-zinc-400 font-medium text-lg">Catálogo</span>
-                    </a>
+          <!-- CONTAINER DO INPUT DE BUSCA -->
+          <div
+            id="content-search"
+            class="flex items-center gap-2 p-3 bg-dark-1 rounded-md z-50 border-2 border-transparent cursor-pointer"
+          >
+            <i class="bi bi-search text-2xl text-zinc-500"></i>
+            <div>
+              <form>
+                <input
+                  id="input"
+                  type="text"
+                  placeholder="Busque por assuntos e aulas"
+                  class="bg-transparent pl-2 w-96 text-white placeholder:text-zinc-500 placeholder:font-semibold focus:outline-none"
+                />
+              </form>
+            </div>
+            <p
+              id="icon-input"
+              class="h-6 w-6 flex items-center justify-center text-sm text-zinc-500 border border-zinc-600 rounded-md py-1 px-3"
+            >
+              /
+            </p>
+          </div>
 
-                    <a href="#" class="cursor-pointer flex items-center gap-3 p-3 max-w-48 rounded-md hover:bg-dark-2">
-                        <img class="w-7" src="assets/icons/icon-pos_graduacao.svg" alt="Icone Pós-Graduação">
-                        <span class="item-sidebar text-zinc-400 font-medium text-lg">Pós-Graduação</span>
-                    </a>
+          <!-- CONTAINER BUTTONS -->
+          <div class="flex items-center gap-3 mr-2">
+            <div
+              class="flex items-start gap-5 border border-zinc-700 p-2 px-4 rounded-md transition-colors cursor-pointer hover:border-zinc-600"
+            >
+              <img
+                src="assets/icons/icon-fire-light.svg"
+                alt="Icone Fire Light"
+              />
+              <span class="text-white font-bold text-lg">0</span>
+            </div>
+            <a
+              href="#"
+              class="text-zinc-200 font-bold bg-zinc-800 p-3 rounded-md transition-colors hover:bg-zinc-700"
+              >Entrar</a
+            >
+            <a
+              href="#"
+              class="text-white font-bold bg-primary-1 rounded-md p-3 transition-colors hover:bg-primary-2"
+              >Comece grátis</a
+            >
+          </div>
+        </nav>
 
-                    <a href="#" class="cursor-pointer flex items-center gap-3 p-3 max-w-48 rounded-md hover:bg-dark-2">
-                        <img class="w-7" src="assets/icons/icon-forum.svg" alt="Icone Fórum">
-                        <span class="item-sidebar text-zinc-400 font-medium text-lg">Fórum</span>
-                    </a>
-                </div>
+        <!-- CONTAINER BANNER -->
+        <div class="w-full bg-banner bg-cover py-4">
+          <div
+            class="flex items-center justify-between max-w-screen-2xl m-auto"
+          >
+            <p>
+              <span class="text-white font-bold text-xl"
+                >// RETROSPECTIVA 2024 ///</span
+              >
+              <span
+                class="ml-2 text-lg text-zinc-300 font-medium border-l border-zinc-600 pl-2"
+              >
+                Relembre como foi sua jornada de estudos neste ano</span
+              >
+            </p>
+            <a
+              href="#"
+              class="text-white text-sm font-semibold transition-colors hover:text-zinc-300"
+            >
+              Acessar retrospectiva <i class="bi bi-arrow-up-right ml-1"></i>
+            </a>
+          </div>
+        </div>
+      </header>
 
-                <div class="space-y-4">
-                    <a href="#" class="cursor-pointer flex items-center gap-3 p-3 max-w-48 rounded-md hover:bg-dark-2">
-                        <img class="w-7" src="assets/icons/icon-comunidade.svg" alt="Icone Comunidade">
-                        <span class="item-sidebar text-zinc-400 font-medium text-lg">Comunidade</span>
-                    </a>
+      <!-- CONTAINER SIDEBAR -->
+      <div class="absolute top-[149px] bottom-0 w-full flex bg-dark-1">
+        <aside
+          class="flex flex-col items-start justify-between py-5 px-4 border-r border-zinc-700"
+        >
+          <div class="space-y-4">
+            <a
+              href="#"
+              class="cursor-pointer flex items-center gap-3 p-3 max-w-48 bg-dark-2 rounded-md hover:bg-dark-2"
+            >
+              <img
+                class="w-7"
+                src="assets/icons/icon-home.svg"
+                alt="Icone home"
+              />
+              <span class="item-sidebar text-zinc-400 font-medium text-lg"
+                >Home</span
+              >
+            </a>
 
-                    <a href="#" class="cursor-pointer flex items-center gap-3 p-3 max-w-48 rounded-md hover:bg-dark-2">
-                        <img class="w-7" src="assets/icons/icon-ajuda.svg" alt="Icone de Ajuda">
-                        <span class="item-sidebar text-zinc-400 font-medium text-lg">Ajuda</span>
-                    </a>
-                </div>
-            </aside>
+            <a
+              href="#"
+              class="cursor-pointer flex items-center gap-3 p-3 max-w-48 rounded-md hover:bg-dark-2"
+            >
+              <img
+                class="w-7"
+                src="assets/icons/icon-catalogo.svg"
+                alt="Icone Catálogo"
+              />
+              <span class="item-sidebar text-zinc-400 font-medium text-lg"
+                >Catálogo</span
+              >
+            </a>
 
-            <main>
-                <div>   
-                    <div id="card">
-                        <div>
-                            <h4>Comece sua jornada na Rocketseat gratuitamente</h4>
-                            <p>Avance em seus estudos e aproveite os nossos estudos gratuitos ou assine para ter acesso a todas as nossas formações</p>
-                        </div>
+            <a
+              href="#"
+              class="cursor-pointer flex items-center gap-3 p-3 max-w-48 rounded-md hover:bg-dark-2"
+            >
+              <img
+                class="w-7"
+                src="assets/icons/icon-pos_graduacao.svg"
+                alt="Icone Pós-Graduação"
+              />
+              <span class="item-sidebar text-zinc-400 font-medium text-lg"
+                >Pós-Graduação</span
+              >
+            </a>
 
-                        <a href="#">Comece gratuitamente</a>
-                    </div>
+            <a
+              href="#"
+              class="cursor-pointer flex items-center gap-3 p-3 max-w-48 rounded-md hover:bg-dark-2"
+            >
+              <img
+                class="w-7"
+                src="assets/icons/icon-forum.svg"
+                alt="Icone Fórum"
+              />
+              <span class="item-sidebar text-zinc-400 font-medium text-lg"
+                >Fórum</span
+              >
+            </a>
+          </div>
 
-                    <div id="options">
-                        <div>
-                            <h6>Veja o que vem aí</h6>
-                            <p>Descubra as novidades da Rocketseat</p>
-                        </div>
+          <div class="space-y-4">
+            <a
+              href="#"
+              class="cursor-pointer flex items-center gap-3 p-3 max-w-48 rounded-md hover:bg-dark-2"
+            >
+              <img
+                class="w-7"
+                src="assets/icons/icon-comunidade.svg"
+                alt="Icone Comunidade"
+              />
+              <span class="item-sidebar text-zinc-400 font-medium text-lg"
+                >Comunidade</span
+              >
+            </a>
 
-                        <div>
-                            <div>
-                                <a href="#">TODOS OS LEMBRETES</a>
-                                <a href="#">EVENTOS</a>
-                                <a href="#">CONTEÚDOS</a>
-                                <a href="#">NOVIDADES DA PLATAFORMA</a>
-                                <a href="#">OFERTAS</a>
-                            </div>
+            <a
+              href="#"
+              class="cursor-pointer flex items-center gap-3 p-3 max-w-48 rounded-md hover:bg-dark-2"
+            >
+              <img
+                class="w-7"
+                src="assets/icons/icon-ajuda.svg"
+                alt="Icone de Ajuda"
+              />
+              <span class="item-sidebar text-zinc-400 font-medium text-lg"
+                >Ajuda</span
+              >
+            </a>
+          </div>
+        </aside>
 
-                            <div>
-                                <i class="bi bi-calendar3"></i>
-                                <a href="#">Filtrar por data</a>
-                            </div>
-                        </div>
-                    </div>
+        <!-- CONTAINER CONTÉUDO PRINCIPAL -->
+        <main>
+          <div>
+            <div id="card">
+              <div>
+                <h4>Comece sua jornada na Rocketseat gratuitamente</h4>
+                <p>
+                  Avance em seus estudos e aproveite os nossos estudos gratuitos
+                  ou assine para ter acesso a todas as nossas formações
+                </p>
+              </div>
+
+              <a href="#">Comece gratuitamente</a>
+            </div>
+
+            <div id="options">
+              <div>
+                <h6>Veja o que vem aí</h6>
+                <p>Descubra as novidades da Rocketseat</p>
+              </div>
+
+              <div>
+                <div>
+                  <a href="#">TODOS OS LEMBRETES</a>
+                  <a href="#">EVENTOS</a>
+                  <a href="#">CONTEÚDOS</a>
+                  <a href="#">NOVIDADES DA PLATAFORMA</a>
+                  <a href="#">OFERTAS</a>
                 </div>
 
                 <div>
-                    <div>
-                        <div>
-                            <img src="assets/icons/rocketseat-symbol.svg" alt="">
-                            <p>Olá visitante</p>
-                        </div>
-
-                        <div>
-                            <a href="#"><img src="assets/icons/icon-objetivo.svg" alt=""></a>
-                            <div>
-                                <p>Meu objetivo</p>
-                                <p>Crie um plano personalizado para te levar ao seu objetivo</p>
-                                <div>
-                                    <a href="#">Definir objetivo </a>
-                                    <i class="bi bi-arrow-up-right"></i>
-                                </div>
-                            </div>
-
-                            <div>
-                                <a href="#">
-                                    <img src="assets/icons/icon-presente.svg" alt="">
-                                    <span>Indique e ganhe</span>
-                                </a>
-
-                                <a href="#">
-                                    <img src="assets/icons/icon-comunidade.svg" alt="">
-                                    <span>Comunidade</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                  <i class="bi bi-calendar3"></i>
+                  <a href="#">Filtrar por data</a>
                 </div>
-            </main>
-        </div>
+              </div>
+            </div>
+          </div>
 
+          <div>
+            <div>
+              <div>
+                <img src="assets/icons/rocketseat-symbol.svg" alt="" />
+                <p>Olá visitante</p>
+              </div>
+
+              <div>
+                <a href="#"
+                  ><img src="assets/icons/icon-objetivo.svg" alt=""
+                /></a>
+                <div>
+                  <p>Meu objetivo</p>
+                  <p>
+                    Crie um plano personalizado para te levar ao seu objetivo
+                  </p>
+                  <div>
+                    <a href="#">Definir objetivo </a>
+                    <i class="bi bi-arrow-up-right"></i>
+                  </div>
+                </div>
+
+                <div>
+                  <a href="#">
+                    <img src="assets/icons/icon-presente.svg" alt="" />
+                    <span>Indique e ganhe</span>
+                  </a>
+
+                  <a href="#">
+                    <img src="assets/icons/icon-comunidade.svg" alt="" />
+                    <span>Comunidade</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
     </div>
 
     <script type="module" src="script.js"></script>
-</body>
-
+  </body>
 </html>
