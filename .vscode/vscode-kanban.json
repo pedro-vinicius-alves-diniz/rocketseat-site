@@ -4,19 +4,6 @@
       "assignedTo": {
         "name": "Pedro Vinicius Alves Diniz"
       },
-      "creation_time": "2024-12-28T20:47:04.525Z",
-      "description": {
-        "content": "Opaçidade background;\nBorda white no \"content-search\";\nInserir icone \"close\";",
-        "mime": "text/markdown"
-      },
-      "id": "7",
-      "references": [],
-      "title": "Animação focus input"
-    },
-    {
-      "assignedTo": {
-        "name": "Pedro Vinicius Alves Diniz"
-      },
       "creation_time": "2024-12-28T20:42:53.375Z",
       "description": {
         "content": "Mudança icone menu;\nTirando a palavra \"Rocketseat\";\nMudança componente \"input\";",
@@ -34,6 +21,15 @@
   "in-progress": [],
   "testing": [],
   "done": [
+    {
+      "assignedTo": {
+        "name": "Pedro Vinicius Alves Diniz"
+      },
+      "creation_time": "2024-12-28T20:49:29.887Z",
+      "id": "9",
+      "references": [],
+      "title": "Animação \"icon-menu\""
+    },
     {
       "assignedTo": {
         "name": "Pedro Vinicius Alves Diniz"
@@ -95,10 +91,14 @@
       "assignedTo": {
         "name": "Pedro Vinicius Alves Diniz"
       },
-      "creation_time": "2024-12-28T20:49:29.887Z",
-      "id": "9",
+      "creation_time": "2024-12-28T20:47:04.525Z",
+      "description": {
+        "content": "Opaçidade background;\nBorda white no \"content-search\";\nInserir icone \"close\";",
+        "mime": "text/markdown"
+      },
+      "id": "7",
       "references": [],
-      "title": "Animação \"icon-menu\""
+      "title": "Animação focus input"
     }
   ]
 }
